@@ -1,0 +1,391 @@
+/* PC */
+
+@media (min-width: 901px) {
+  #container {
+    grid-template-columns: 300px auto 200px;
+    grid-template-rows: 150px auto 50px;
+    grid-template-areas:
+      "hd hd hd"
+      "sd1 main sd2"
+      ". ft sd2";
+  }
+
+  .header {
+    grid-area: hd;
+    text-align: center;
+    padding-top: 2.5em;
+  }
+
+  .header > a {
+    font-size: 5em;
+  }
+
+  .main {
+    grid-area: main;
+    /* height: 100vh; */
+    padding: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 950px 600px;
+  }
+
+  .main > h1 {
+    font-size: 5em;
+    color: #242345;
+  }
+
+  .main > button {
+    background-color: #ffffff;
+    font-size: 2em;
+    padding: 15px 32px;
+    border: 1px solid #233443;
+    font-weight: 100;
+    border-radius: 2px;
+  }
+
+  .left {
+    grid-area: sd1;
+  }
+
+  .card {
+    padding: 1em;
+    margin: 1em;
+    /*border: 1px solid red; */
+    line-height: 2em;
+    border: 1px solid #8b8b8b;
+  }
+
+  .card > h1 {
+    color: #ffffff;
+  }
+
+  .card > h2 {
+    font-size: 2em;
+  }
+
+  .card h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cac9c9;
+  }
+
+  .card > img {
+    width: 80%;
+  }
+
+  .card p {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 100;
+    color: #929292;
+  }
+
+  .right {
+    grid-area: sd2;
+  }
+
+  .socialmedia {
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 5em 5em5em;
+    justify-content: space-evenly;
+  }
+  .socialmedia > h1 {
+    font-size: 2em;
+    color: #ffffff;
+  }
+
+  .socialmedia a {
+    border-radius: 30em;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .footer {
+    grid-area: ft;
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1em;
+    padding: 3em;
+    border-top: 1px solid #e7e4e4;
+    border-bottom: 1px solid #e7e4e4;
+    margin-top: 1em;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #container {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 90px 500px 100px 100px;
+    grid-template-areas:
+      "hd hd"
+      "sd2 main"
+      "sd2 sd1"
+      "sd2 ft";
+  }
+  img {
+    width: 60%;
+  }
+
+  .header {
+    grid-area: hd;
+    text-align: center;
+    padding-top: 2.5em;
+  }
+
+  .header > a {
+    font-size: 2em;
+  }
+
+  .main {
+    grid-area: main;
+    /* height: 100vh; */
+    padding: 3em;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 800px 600px;
+  }
+
+  .main button {
+    border: 1px solid #999595;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 3em;
+    font-weight: 200;
+    opacity: 0.5;
+    background-color: #ffffff;
+    margin: 10%;
+  }
+
+  .main h1 {
+    font-size: 4em;
+    color: #242424;
+    text-shadow: 1px 2px #243c57b2;
+  }
+
+  /* ABOUT ME */
+  .left {
+    grid-area: sd2;
+  }
+
+  .card {
+    padding: 1em;
+    margin: 1em;
+    /*border: 1px solid red; */
+    line-height: 2em;
+    border: 1px solid #8b8b8b;
+  }
+
+  .card > h1 {
+    color: #ffffff;
+  }
+
+  .card > h2 {
+    color: #ffffff;
+    font-size: 2em;
+  }
+
+  .card h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cac9c9;
+  }
+
+  .card > img {
+    width: 30%;
+  }
+
+  .card p {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 100;
+    color: #929292;
+  }
+
+  /* Social Media Icons Styling*/
+
+  .right {
+    grid-area: sd1;
+  }
+  .socialmedia > h1 {
+    font-size: 2em;
+    color: #ffffff;
+  }
+
+  .socialmedia {
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+    justify-content: space-evenly;
+  }
+
+  .socialmedia a {
+    border-radius: 30em;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .footer {
+    grid-area: ft;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px solid #e7e4e4;
+    letter-spacing: 1em;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 599px) {
+  #container {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px auto auto auto 50px;
+    grid-template-areas:
+      "hd"
+      "main"
+      "sd1"
+      "sd2"
+      "ft";
+  }
+  img {
+    width: 60%;
+  }
+
+  .header {
+    grid-area: hd;
+    text-align: center;
+    padding-top: 2.5em;
+  }
+
+  .header > a {
+    font-size: 2em;
+  }
+
+  .main {
+    grid-area: main;
+    /* height: 100vh; */
+    padding: 3em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 400px 300px;
+  }
+
+  .main button {
+    border: 1px solid #233443;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 200;
+    opacity: 0.8;
+    background-color: #ffffff;
+    margin: 25%;
+    color: #000000;
+  }
+
+  /* ABOUT ME */
+
+  .left {
+    grid-area: sd1;
+  }
+
+  .card {
+    padding: 1em;
+    margin: 1em;
+    /*border: 1px solid red; */
+    line-height: 2em;
+    border: 1px solid #8b8b8b;
+  }
+
+  .card > h1 {
+    color: #ffffff;
+  }
+
+  .card > h2 {
+    font-size: 2em;
+  }
+
+  .card h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cac9c9;
+  }
+
+  .card > img {
+    width: 30%;
+  }
+
+  .card p {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 100;
+    color: #929292;
+  }
+
+  /* Social Media Icons Styling*/
+
+  .right {
+    grid-area: sd2;
+  }
+
+  .socialmedia {
+    flex-direction: row;
+    align-items: center;
+    padding: none;
+    justify-content: space-evenly;
+  }
+
+  .socialmedia > h1 {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  .socialmedia a {
+    border-radius: 30em;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .footer {
+    grid-area: ft;
+    font-size: 1em;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px solid #e7e4e4;
+    letter-spacing: 0.5em;
+  }
+}

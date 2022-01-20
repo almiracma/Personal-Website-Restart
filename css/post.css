@@ -1,0 +1,43 @@
+#container {
+  display: grid;
+}
+
+.header > a {
+  font-family: "Homemade Apple", cursive;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.main p {
+  color: #000000;
+}
+
+.card > h2 {
+  color: #ffffff;
+  font-family: "Homemade Apple", cursive;
+}
+
+.socialmedia {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.right p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.left {
+  display: flex;
+}
+
+.footer {
+  color: #ffffff;
+}

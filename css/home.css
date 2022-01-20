@@ -1,0 +1,26 @@
+.main {
+  background-image: url("../images/white.jpg");
+}
+
+#container {
+  display: grid;
+}
+
+.header > a {
+  font-family: "Homemade Apple", cursive;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.card > h2 {
+  font-family: "Homemade Apple", cursive;
+  color: #ffffff;
+}
+
+.socialmedia {
+  display: flex;
+}
